@@ -1,0 +1,58 @@
+This file is to help with using the command line
+to push your changes for the project up to the 
+github repository SWETigerZone.
+
+Download/Install "git bash"
+Use "git bash" when working with git.
+Git is included with the install.
+
+Helpful Git Commands:
+
+'git clone https://github.com/min-gy/SWETigerZone.git'
+This clones the github repository to a new folder in
+the current directory named SWETigerZone.
+
+'git checkout -b name'
+This makes a new branch in your local repository
+named "name", replace name with whatever you want.
+!!WARNING: create your own branch, it makes!!
+!!               pushing and merging easier!!
+
+'git pull origin master'
+This pulls any updates of the master branch on github
+to the current branch. Do this often to keep up to
+date with the main repository.
+
+'git diff'
+This will display all changes in the current branch
+since the last commit.
+
+'git status'
+This will display all files that you have changed or
+added to the repository.
+
+'git commit -am "message"'
+This commits the current changes to the local
+repository of the current branch. Replace message
+with a short phrase describing the changes.
+
+'git push origin branchName'
+This pushes the lastest commit in branchName to the
+main github repository. Replace branchName with the
+name of the branch you would like to push.
+!!WARNING: pushing directly to master is dangerous!!
+
+After you push from your local repository, you will
+need to go into github and merge the branch you
+pushed to the master branch, there should be no
+conflicts when trying to merge. After pushing, go
+to "branches" on the github repository, find your
+branch and click "new pull request" on the right.
+You should see a green "Able to merge" message on the
+top and a green "Create pull request" button below,
+click the button. After that, you should see a "This
+branch has no conflicts with the base branch" message
+and a green "Merge pull request" button, click the
+button. Finally, you should see a green "Confirm merge"
+button, click the button. Now you should be able
+to see your changes in the master branch on github.
